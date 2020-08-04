@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BasketballScoreRecorder</string>
+    <string name="aTeam_tv">A team</string>
+    <string name="bTeam_tv">B team</string>
+    <string name="aScore_tv" translatable="false">0</string>
+    <string name="bScore_tv" translatable="false">0</string>
+    <string name="aTeam_add1_btn" translatable="false">+1</string>
+    <string name="bTeam_add1_btn" translatable="false">+1</string>
+    <string name="aTeam_add2_btn" translatable="false">+2</string>
+    <string name="bTeam_add2_btn" translatable="false">+2</string>
+    <string name="bTeam_add3_btn" translatable="false">+3</string>
+    <string name="aTeam_add3_btn" translatable="false">+3</string>
+    <string name="cancel">cancel</string>
+    <string name="reset">reset</string>
+</resources>
