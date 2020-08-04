@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="team_size">25sp</dimen>
+    <dimen name="iv_size">50dp</dimen>
+    <dimen name="score_size">50sp</dimen>
+    <dimen name="btn_texrt_size">30sp</dimen>
+</resources>
