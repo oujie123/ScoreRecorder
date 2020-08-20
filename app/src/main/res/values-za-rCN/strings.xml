@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">篮球计分器</string>
-    <string name="aTeam_tv">A队</string>
-    <string name="bTeam_tv">B队</string>
-    <string name="cancel">取消上次计分</string>
-    <string name="reset">重置</string>
-</resources>

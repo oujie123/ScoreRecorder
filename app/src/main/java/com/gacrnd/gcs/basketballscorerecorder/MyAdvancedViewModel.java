@@ -1,7 +1,5 @@
 package com.gacrnd.gcs.basketballscorerecorder;
 
-import android.content.Intent;
-
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.SavedStateHandle;
 import androidx.lifecycle.ViewModel;
@@ -18,13 +16,16 @@ public class MyAdvancedViewModel extends ViewModel {
 
     MyAdvancedViewModel(SavedStateHandle handle) {
         this.handle = handle;
+        if (!handle.contains(MY_KEY)) {
+            handle.set(MY_KEY, 0);
+        }
     }
 
-    public MutableLiveData<Integer> getScore() {
-        return handle.getLiveData(MY_KEY, 0);
+    public MutableLiveData<Integer> getNumber() {
+        return handle.getLiveData(MY_KEY);
     }
 
-    public void add(){
-        handle.set(MY_KEY,(int)handle.getLiveData(MY_KEY).getValue() + 1);
+    public void add() {
+        handle.set(MY_KEY, getNumber().getValue() == null ? 0 : getNumber().getValue() + 1);
     }
 }

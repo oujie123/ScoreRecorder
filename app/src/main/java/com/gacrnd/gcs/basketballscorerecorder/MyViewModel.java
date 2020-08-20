@@ -30,22 +30,22 @@ public class MyViewModel extends ViewModel {
 
     public void addScore(boolean isAteam, int score) {
         if (isAteam) {
-            aScoreTemp = aScore.getValue();
-            bScoreTemp = bScore.getValue();
-            aScore.setValue(aScore.getValue() + score);
+            aScoreTemp = aScore.getValue() == null ? 0 : aScore.getValue();
+            bScoreTemp = bScore.getValue() == null ? 0 : bScore.getValue();
+            aScore.setValue(aScore.getValue() == null ? 0 : aScore.getValue() + score);
         } else {
-            aScoreTemp = aScore.getValue();
-            bScoreTemp = bScore.getValue();
-            bScore.setValue(bScore.getValue() + score);
+            aScoreTemp = aScore.getValue() == null ? 0 : aScore.getValue();
+            bScoreTemp = bScore.getValue() == null ? 0 : bScore.getValue();
+            bScore.setValue(bScore.getValue() == null ? 0 : bScore.getValue() + score);
         }
     }
 
-    public void unDo(){
+    public void unDo() {
         aScore.setValue(aScoreTemp);
         bScore.setValue(bScoreTemp);
     }
 
-    public void reset(){
+    public void reset() {
         aScore.setValue(0);
         bScore.setValue(0);
     }

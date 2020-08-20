@@ -12,4 +12,7 @@
     <string name="aTeam_add3_btn" translatable="false">+3</string>
     <string name="cancel">cancel</string>
     <string name="reset">reset</string>
+    <string name="my_key">my_key</string>
+    <string name="shp_name">my_shp</string>
+    <string name="increase_one">+1</string>
 </resources>
